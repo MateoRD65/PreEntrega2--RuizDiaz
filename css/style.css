@@ -1,0 +1,244 @@
+/* Colores:
+#386641 Hunter Green
+#5ea66c Forest Green Crayola
+#4a8756 Middle Green
+*/
+/* Imagenes sacadas de https://undraw.co/ */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	align-items: center;
+	overflow-x: hidden;
+	background-color: #5ea66c;
+}
+/* Header */
+a {
+	text-decoration: none;
+	color: #000;
+}
+.cabecera {
+	display: flex;
+	min-height: 70px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 20px;
+	background-color: #4a8756;
+}
+.logo {
+	display: flex;
+	align-items: center;
+}
+.logo img {
+	height: 60px;
+	margin: -9px 5px;
+}
+.nav-logo {
+	color: #000;
+}
+.nav-link {
+	font-weight: 600;
+	padding: 5px 15px;
+	margin: 5px;
+}
+.nav-link:hover {
+	color: #fff;
+	opacity: 0.8;
+}
+/* Fin Header */
+/* Media para el header responsive */
+@media (max-width: 700px) {
+	header {
+		flex-direction: column;
+	}
+	nav {
+		padding: 10px 0px;
+	}
+}
+/* Fin @media */
+/* Contenedores y sus estilos */
+.contenedor {
+	display: flex;
+}
+.contenedor2 {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.contenedor-img {
+	margin: 50px 60px 120px 35px;
+	display: inline-block;
+	width: 40%;
+}
+
+.contenedor-texto {
+	text-align: center;
+	margin-top: 50px;
+}
+.parrafo-texto {
+	margin: 30px 20px 20px 20px;
+}
+.titulo {
+	font-weight: 600;
+	font-size: 40px;
+	margin: auto auto 20px auto;
+	color: #000;
+}
+
+/* FOOTER */
+footer {
+	width: 100%;
+	padding: 50px 0px;
+	background-image: url(../images/background-footer.svg);
+	background-size: cover;
+}
+
+.contenedor-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1200px;
+	margin: 50px auto;
+}
+
+.caja-footer {
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+}
+
+.caja-footer .terminos {
+	max-width: 350px;
+	margin-top: 20px;
+	font-weight: 500;
+	color: hsl(0, 0%, 58%);
+	font-size: 18px;
+}
+
+.caja-footer h2 {
+	margin-bottom: 30px;
+	color: hsl(0, 0%, 90%);
+	font-weight: 700;
+}
+
+.caja-footer a {
+	margin-top: 10px;
+	color: hsl(0, 0%, 88%);
+	font-weight: 600;
+	font-family: sans-serif;
+}
+
+.caja-footer a:hover {
+	opacity: 0.8;
+}
+
+.caja-footer a .fab {
+	font-size: 20px;
+}
+
+.caja-copyright {
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+	padding: 40px 0px;
+}
+
+.caja-copyright p {
+	margin: 20px auto;
+	color: hsl(0, 0%, 88%);
+}
+
+.caja-copyright hr {
+	border: none;
+	height: 1px;
+	background-color: hsl(0, 0%, 58%);
+}
+
+/* FIN FOOTER */
+/* algunos estilos */
+.bold {
+	font-weight: 600;
+}
+.mayus {
+	text-transform: uppercase;
+}
+.size {
+	font-size: 48px;
+}
+.size2 {
+	font-size: 60px;
+}
+.center {
+	margin: auto;
+	text-align: center;
+}
+/* Estilos de Formularios */
+.formulario {
+	flex-direction: column;
+	margin: auto;
+	padding: 20px 10px;
+	width: 450px;
+	margin-top: 45px;
+	text-align: center;
+}
+.formulario input,
+textarea,
+select {
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 5px;
+	font-size: 12px;
+}
+
+textarea {
+	min-height: 100px;
+	max-height: 100px;
+	min-width: 500px;
+	max-width: 500px;
+}
+
+fieldset {
+	border: 2px solid #000;
+	border-radius: 10px;
+}
+.formulario button {
+	background-color: #386641;
+	padding: 10px 80px;
+	color: #fff;
+}
+button:hover {
+	cursor: pointer;
+}
+/* Estilos para la galeria */
+.galeria {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 20px 10px;
+}
+
+.galeria img {
+	width: 100%;
+	max-width: 350px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+/* .galeria::after {
+	content: '';
+	width: 350px;
+} */
